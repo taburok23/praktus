@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML 5 Boilerplate</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+<input id="input">
+<input id="input2">
+
+<button type="button" onclick="MyFuncValidate()">Submit</button>
+
+<p id="view">asasas</p>
+<p id="view2">asas</p>
+
+
+<!-- document.getElementById("demo").innerHTML = "Hello World!"; -->
+
+
+<script>
+function MyFuncValidate() {  
+  let laman = document.getElementById("input").value;
+  let laman2 = document.getElementById("input2").value;
+
+   document.getElementById("view").innerHTML = laman;
+   document.getElementById("view2").innerHTML = laman2;
+
+}
+</script>
+  
+  </body>
+</html>
