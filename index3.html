@@ -17,14 +17,12 @@
 <p id="view">asasas</p>
 <p id="view2"></p>
 <p id="view3"></p>
+
 <ul id="list">
+  <li id="list2"></li>
 </ul>
 
-<p>test</p>
-<p>test2</p>
-<p>test3</p>
-<p>test4</p>
-<p>5</p>
+
 
 <!-- <p id="view2">asas</p>  -->
 
@@ -48,6 +46,8 @@ function MyFuncValidate() {
   // Get the Value of textbox:
   const inputValue = document.getElementById("input").value;
 
+  //const example = sessionStorage.setItem("name", inputValue);
+
   // Create a text node:
   const textnode = document.createTextNode(inputValue);
 
@@ -55,7 +55,10 @@ function MyFuncValidate() {
   node.appendChild(textnode);
 
   // Append the "li" node to the list:
-  document.getElementById("list").appendChild(node);
+  document.getElementById("list2").appendChild(node);
+
+
+  
 
   // Store Local Storage
   sessionStorage.setItem("name", inputValue);
